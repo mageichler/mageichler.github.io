@@ -1,8 +1,14 @@
+:root {
+    --dark: #161616;
+    --light: #F5FAF0;
+    --color: #A9BA97;
+}
+
+
 body {
     padding-top: 5rem;
+    background: var(--color);
+    color: var(--dark);
   }
-  .starter-template {
-    padding: 3rem 1.5rem;
-    text-align: center;
-  }
+
   
