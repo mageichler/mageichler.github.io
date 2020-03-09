@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Red+Hat+Text:400,500,700&display=swap');
+
 :root {
     --dark: #161616;
     --light: #F5FAF0;
     --color: #A9BA97;
+    --font-serif: "Abril Fatface", "Helvetica Neue", serif;
+    --font-sans-serif: "Red Hat Text", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
+html {
+    font-size: 16px;
+}
 
 body {
     padding-top: 5rem;
     background: var(--color);
     color: var(--dark);
+    font-family: var(--font-sans-serif);
+    font-weight: 400;
   }
 
+h1, h2, h3 {
+    font-family: var(--font-serif);
+}
   
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
