@@ -13,7 +13,6 @@ html {
 }
 
 body {
-    padding-top: 5rem;
     background: var(--color);
     color: var(--dark);
     font-family: var(--font-sans-serif);
@@ -26,8 +25,95 @@ h1, h2, h3 {
   
 h1 {
     font-size: 8rem;
+    margin-top: 8rem;
 }
 
 h2 {
     font-size: 4rem;
+    margin-top: 8rem;
+    border-bottom: 2px solid var(--dark);
+    padding-bottom: 0.5rem;
+}
+
+a, a:visited {
+    display: inline-block;
+    font-weight: 500;
+    text-decoration: underline;
+    color: var(--dark);
+}
+
+a:focus, a:hover, a:active {
+    background: var(--dark);
+    color: var(--color);
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.no-gutters {
+    padding: 0 !important;
+  }
+
+.mag-navbar {
+    border-bottom: 2px solid var(--dark);
+    background: var(--color);
+    height: 4rem;
+    position: sticky;
+    top: 0px;
+    padding: 0;
+    z-index: 999;
+}
+
+.breadcrumb-logo {
+    width: 80%
+}
+
+.contact-icon {
+    width: 20%;
+}
+
+.temp-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--dark);
+    box-sizing: border-box;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+.project-item {
+	min-height: 12rem;
+}
+
+.number {
+	font-size: 12rem;
+	font-style: oblique;
+	font-weight: 700;
+	text-shadow: -1px -1px 0 var(--light), 1px -1px 0 var(--light), -1px 1px 0 var(--light), 1px 1px 0 var(--light), -2px 0 0 var(--light), 2px 0 0 var(--light), 0 2px 0 var(--light), 0 -2px 0 var(--light);
+	color: var(--color);
+	line-height: 12rem;
+}
+
+.project-desc {
+    margin-top: -10rem;
+    margin-left: 6rem;
+}
+
+.project-desc > strong {
+	display: block;
+}
+
+.project-desc > a {
+	display: block;
 }
