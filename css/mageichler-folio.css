@@ -27,7 +27,8 @@ h1, h2, h3, h4 {
   
 h1 {
     font-size: 8rem;
-    margin-top: 8rem;
+    margin-top: 12rem;
+    margin-left: -7px;
 }
 
 h2 {
@@ -70,14 +71,18 @@ strong {
 
 .navbar {
     padding: 0;
+    background: var(--colo);
+}
+
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .mag-navbar {
     border-bottom: 2px solid var(--dark);
     background: var(--color);
     height: 4rem;
-    top: 0px;
-    padding: 0;
     z-index: 999;
 }
 
@@ -114,17 +119,8 @@ main {
 .project {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
-    padding-right: calc(2rem - 15px);
-    padding-left: calc(2rem - 15px);
     margin-top: 0.5rem;
     margin-bottom: 1rem;
-    margin-right: -2rem;
-    margin-left: -2rem;
-}
-
-.project:hover, .project:focus, .project:active {
-    background: var(--dark-hover);
-    transition: ease-in-out all 0.12s;
 }
 
 .tags {
