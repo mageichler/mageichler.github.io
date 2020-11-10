@@ -47,6 +47,14 @@ h4 {
     font-size: 2.5rem;
 }
 
+h5 {
+    margin-top: 2rem;
+}
+
+h5:first-of-type {
+    margin-top: 0;
+}
+
 a, a:visited {
     display: inline-block;
     font-weight: 500;
@@ -81,7 +89,7 @@ li {
 }
 
 strong {
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .navbar {
@@ -188,4 +196,19 @@ main {
     margin-top: 3rem;
 }
 
+.mag-photo {
+display: none;
+}
+  
+  @media (min-width: 992px) {
+    .mag-photo {
+        display: block;
+        width: 25%;
+        height: auto;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        right: calc(10% + 5px);
+    }
+  }
 
