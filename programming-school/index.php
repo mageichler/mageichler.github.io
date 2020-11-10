@@ -1,54 +1,15 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Magdalena Eichler">
-    <title>Magdalena Eichler - portfolio</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/bootstrap-grid.css" rel="stylesheet">
-
-    <!-- Favicons -->
-
-
-    <!--    
-    <link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/4.4/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-    <link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
-    -->
-
-
-    <!-- Custom styles for this template -->
-    <link href="../css/mageichler-folio.css" rel="stylesheet">
-
-
-  </head>
+    <?php
+    $path = '../';
+    include_once '../res/head.php';
+    ?>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container mag-navbar">
-        <a href="../" class="navbar-brand">Magdalena Eichler – portfolio</a>
-        <div class="contact-icons">
-          <a href="mailto:mageichler@gmail.com">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 800">
-              <path d="M1023 168q1-3 1-6t-1-6l-2-6q-12-54-77-54H112q-30 0-57.5 11T13 137l-5 5q-10 11-7 26q-1 2-1 4v516q0 40 36 76t76 36h832q37 0 58.5-34t21.5-78V170.5l-1-2.5zm-911-8h832L512 505L81 161q8-1 31-1zm832 576H112q-9 0-20.5-8T72 708.5T64 688V230l427 341q9 8 21 8q12-1 21-8l427-341v462q0 44-16 44z" fill="var(--dark)"/><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" />
-            </svg>
-          </a>
-          <a href="phone">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 576 1024">
-              <path d="M480 0H96Q70 0 48 13T13 48T0 96v832q0 40 28 68t68 28h384q40 0 68-28t28-68V96q0-26-13-48t-35-35t-48-13zm32 928q0 13-9.5 22.5T480 960H96q-13 0-22.5-9.5T64 928V96q0-13 9.5-22.5T96 64h384q13 0 22.5 9.5T512 96v832zM288.5 800q-26.5 0-45.5 19t-19 45q0 17 8.5 32t23.5 23.5t32 8.5t32-8.5t23.5-23.5t8.5-32q0-26-18.5-45t-45-19zM352 96H224q-13 0-22.5 9.5T192 128t9.5 22.5T224 160h128q13 0 22.5-9.5T384 128t-9.5-22.5T352 96z" fill="var(--dark)"/><rect x="0" y="0" width="24" height="24" fill="rgba(0, 0, 0, 0)" />
-            </svg>
-          </a>
-        </div>
-      </div> 
-    </nav>
+    <?php
+    include_once '../res/nav.php'
+    ?>
   
     <div class="container subpage">
       <main role="main">
@@ -161,35 +122,15 @@
         </div>
         </div>
         
-        <div class="row thanks">
-        <div class="col-md-12">
-            <h3>Thanks for watching!</h3>
-            <p>Let's meet! I’ll be happy to talk about my projects.</p>
-            <p>
-            <strong>Magdalena Eichler</strong> <br>
-            aspiring UX/UI designer based in Gdansk, Poland <br>
-            <strong>mail:</strong> mageichler@gmail.com <br>  
-            <strong>phone:</strong> +48 726 114 011 <br>
-            </p>
-            <p>
-            <a href="res/cv.pdf" target="_blank">Download my CV</a>
-            </p>
-        </div>
-        </div>
+        <?php
+        include_once '../res/thanks.php';
+        ?>
+
     </main>
-    <footer class="footer">
-        <div class="row">
-        <div class="col-md-9">
-            Designed and coded with 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="1.02em" height="1em" style="vertical-align: -0.062em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 -48 1040 1024"><path d="M288 66q73 0 180 106l46 45l45-46q15-16 31.5-30t32.5-26t31.5-21T684 78.5t27.5-9.5t24.5-3q89 0 157 68q69 69 69 166t-69 167q-5 4-359 387q-5 5-11 6.5t-10 1.5q-12 0-21-8q-324-360-359-395q-8-8-15.5-17.5t-14-19t-12-19.5t-10-20.5T74 361t-5.5-22t-3.5-23t-1-23q0-98 69-167q32-31 70-45.5T288 66zm0-64q-59 0-109 19T88 81q-43 43-65.5 99T0 292.5T22.5 405T88 504q9 9 49.5 53.5t91 100.5t100 111t83.5 92l34 37q27 28 66.5 28t67.5-28q354-383 358-386q88-88 88-212T938 89q-44-44-93.5-65.5T736 2q-53 0-111.5 35T513 126Q387 2 288 2z" fill="var(--dark)"/><rect x="0" y="-48" width="1040" height="1024" fill="rgba(0, 0, 0, 0)" /></svg>
-            by me
-        </div>
-        <div class="col-md-3 text-right">
-            2020
-        </div>
-        </div>
-    </footer>
-    </div>
+    <?php
+      include_once '../res/footer.php';
+      ?>
+ </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery.slim.min.js"><\/script>')</script><script src="../js/bootstrap.bundle.min.js"></script></body>
