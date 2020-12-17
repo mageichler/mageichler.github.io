@@ -8,6 +8,8 @@
     --color: #A9BA97;
     --font-serif: "Literata", "Helvetica Neue", serif;
     --font-sans-serif: "Red Hat Text", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+    scroll-behavior: smooth;
 }
 
 html {
@@ -51,6 +53,7 @@ h4 {
 
 h5 {
     margin-top: 2rem;
+    font-weight: bold;
 }
 
 h5:first-of-type {
@@ -104,19 +107,14 @@ strong {
 .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    scroll-behavior: smooth;
 }
-
-@media (min-width: 1200px) {
-    .container {
-      max-width: 900px !important;
-    }
-  }
 
 .mag-navbar {
     border-bottom: 2px solid var(--dark);
     background: var(--color);
     height: 4rem;
-    z-index: 999;
+    z-index: 600;
 }
 
 .contact-icons a {
@@ -139,6 +137,8 @@ strong {
 
 main {
     margin-top: 4rem;
+    position: relative;
+    z-index: 3;
 }
 
 .divider {
@@ -157,16 +157,14 @@ main {
 }
 
 .tags {
-    color: var(--dark);
+    color: var(--light);
     font-weight: 500;
     display: inline-block;
     margin-bottom: 1rem;
     font-family: var(--font-sans-serif);
-    background: var(--light);
-    padding: 4px 16px;
-    opacity: 0.5;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
+
 
 .thanks p {
     margin-top: 2rem;
@@ -174,7 +172,7 @@ main {
 
 .btn-folio {
     background: var(--dark);
-    color: var(--color);
+    color: var(--color) !important;
     margin-right: 1rem;
     padding: 0.5rem 1.5rem;
     border-radius: 0;
@@ -185,7 +183,7 @@ main {
 
 .btn-folio:hover, .btn-folio:focus, .btn-folio:active {
     background: var(--color);
-    color: var(--dark);
+    color: var(--dark) !important;
     text-decoration: none;
     box-shadow: inset 2px 2px 0 0 var(--dark), inset -2px -2px 0 0 var(--dark);
 }
@@ -201,6 +199,8 @@ main {
 .small-nav {
     padding-top: 2.5rem;
     font-size: 1rem;
+    position: relative;
+    z-index: 3;
 }
 
 .subpage h1 {
@@ -213,17 +213,127 @@ main {
     margin-top: 3rem;
 }
 
-
-/* background images */
-
-.header-image-subpage {
-    background-position: top center;
-    background-size: calc(100% - 30px);
-    background-repeat: no-repeat;
-    height: 16rem;
-    margin-top: 1rem;
+.toc-container .col-md-12 {
+    padding-right: 1rem;
+    padding-left: 0;
 }
 
-.programming-school {
-    background-image: url("../img/cme_page.png");
+.toc-container {
+    scroll-behavior: smooth;
+    overflow-y: inherit;
+}
+
+.toc {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 6;
+    width: 28%;
+    padding: 1rem;
+    border: 2px solid var(--dark);
+    background: var(--color);
+    top: 5rem;
+    float: right;
+}
+
+.toc ul {
+    padding-left: 0;
+}
+
+.toc ol {
+    padding-left: 1rem;
+}
+
+.toc li {
+    list-style-type: none;
+}
+
+.toc ul > li {
+    padding-bottom: 1rem;
+}
+
+.toc ol li a {
+    font-weight: normal;
+}
+
+.toc a {
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: ease-in-out all 0.3s;
+}
+
+/* modals */
+
+.modal-content {
+    border: 0;
+    background: var(--color);
+    border-radius: 0;
+}
+
+.modal-img {
+    width: 75%;
+    float: left;
+    overflow: auto;
+}
+
+.modal-img img {
+    width: 100%;
+}
+
+.modal-desc {
+    max-width: 25%;
+    float: left;
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.modal-title-box {
+    width: 25%;
+    float: left;
+    padding: 1rem 0rem 1rem 1.5rem;
+}
+
+.button-close {
+    margin-top: -2rem;
+    margin-right: -1rem;
+    padding: 0.9rem 1.5rem !important;
+    font-size: 2.5rem;
+    color: var(--dark);
+    text-shadow: none;
+    opacity: 1;
+    font-weight: lighter;
+}
+
+.button-close:focus {
+    outline: none;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+
+.btn-magnifier {
+    margin-top: 1rem;
+    background: none;
+    color: var(--light);
+    font-family: var( --font-sans-serif);
+    padding: 0.75rem 1rem;
+    border: 0;
+    transition: ease-in-out all 0.12s;
+}
+
+.btn-magnifier:first-of-type {
+    margin-left: -1rem;
+}
+
+.reset {
+    padding: 0.75rem 1.5rem;
+}
+
+.btn-magnifier:hover, .btn-magnifier:active, .btn-magnifier:focus {
+    background: var(--dark);
+    border: 0;
+    border-radius: 0;
+    outline: none;
 }
