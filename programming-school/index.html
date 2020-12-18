@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Hello! I'm Magdalena Eichler, a UX designer based in Gdansk (PL). I believe that everything starts from a story.">
     <meta name="author" content="Magdalena Eichler">
-    <title>Magdalena Eichler - about me</title>
+    <title>Magdalena Eichler - Programming school page</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.css" rel="stylesheet">
@@ -17,17 +17,13 @@
     <!-- Custom styles for this template -->
     <link href="../css/mageichler-folio.css" rel="stylesheet">
 
-    <!-- Custom js file -->
-    <script src="../js/mageichler.js"></script>
-
-
   </head>
 
   <body>
 
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container mag-navbar">
-        <a class="navbar-brand hidden-link" href="">Magdalena Eichler</a>
+        <a class="navbar-brand hidden-link" href="../">Magdalena Eichler</a>
         <div class="contact-icons">
           <a href="mailto:mageichler@gmail.com">
             <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 800">
@@ -60,8 +56,12 @@
 
         <div class="toc-container">
             <div class="toc">
-                <h5>Content:</h5>
-                <ul>
+                <h5>Content:
+                    <svg id="chevron" width="33" height="18" viewBox="0 0 33 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.125 1.83966C0.125 1.54483 0.230298 1.29211 0.440893 1.08152C0.651489 0.870923 0.904204 0.765625 1.19904 0.765625C1.49387 0.765625 1.74659 0.870923 1.95718 1.08152L16.2356 15.3599L30.2928 1.30264C30.5034 1.09205 30.7561 0.98675 31.051 0.98675C31.3458 0.98675 31.5985 1.09205 31.8091 1.30264C32.0197 1.51324 32.125 1.76595 32.125 2.06079C32.125 2.35562 32.0197 2.60834 31.8091 2.81893L16.9937 17.6343C16.7831 17.8449 16.5304 17.9502 16.2356 17.9502C15.9407 17.9502 15.688 17.8449 15.4774 17.6343L0.440893 2.6294C0.398774 2.58728 0.36192 2.53989 0.330331 2.48724C0.298741 2.4346 0.272417 2.38195 0.251357 2.3293L0.188179 2.17135L0.140795 2.0134L0.125 1.83966Z" fill="var(--dark)"/>
+                    </svg>
+                </h5>
+                <ul id="toc-list">
                     <li>
                         <a href="#intro">Intro</a>
                     </li>
@@ -274,9 +274,9 @@
                         </li>
                     </ul>
                     <img src="../img/old-page.svg" class="img-fluid" alt="Courses' list on the old page." data-toggle="modal" data-target="#oldPage">
-                    <p><em>
+                    <em>
                         Main page and Courses page on an old webpage. Small link in the menu leads to courses' and editions' list. The slider with currently available editions' is a shortcut, lead directly to chosen edition subpage. On the right two lists of almost identical product cards.
-                    </em></p>
+                    </em>
                     <p>
                         I encouraged my team during the workshop I conducted to think out of the box and dive deep into our webpage topic so we found more problems, here are some of them:
                     </p>
@@ -303,9 +303,9 @@
                     
                     <img src="../img/alina-persona.svg" class="img-fluid" alt="Example of user persona: Alina Zmęczona." data-toggle="modal" data-target="#persona">
 
-                    <p><em>
+                    <em>
                         Example of persona (short version) for courses’ potential participant. Alina will be an example of a customer who is looking for a big change in her life.
-                    </em></p>
+                    </em>
                     <p>
                         Based on gathered data and created personas, I’ve tried to tell their stories with user journey maps. I wanted to analyze the whole journey - from persona’s first thought, through every touchpoint, up to post-graduate experience. 
                     </p>
@@ -313,9 +313,9 @@
                         I tried to find moments where the page could help the customer in making decisions, problem-solving, finding lost information or just inspire him/her.
                     </p>
                     <img src="../img/user-journey-map.svg" class="img-fluid" alt="Example of user journey map for Alina Zmęczona." data-toggle="modal" data-target="#userJourney">
-                    <p><em>
+                    <em>
                         User journey map for Alina. I based her path on real people’s stories. Graphic designers - creative industry specialists in general, especially those working with digital products - are a strong group of programming courses participants.
-                    </em></p>
+                    </em>
                 </div>
                 <div class="col-md-12" id="problem-solving">
                     <h2>Problem-solving</h2>
@@ -365,12 +365,12 @@
                         My goal was to reduce the number of duplicated information and similar-looking elements, courses'/editions' list. The graph above illustrated previous courses’ page structure- everything was on the same page. There was possible to filter results but if you're looking for Java courses in Gdansk, there was still a few or even a dozen possible choices - the only difference was the starting date. 
                     </p>
                     <img src="../img/courses-page.svg" class="img-fluid" alt="The difference between courses' page information architecture." data-toggle="modal" data-target="#courses">
-                    <p><em>
+                    <em>
                         Left: Existing page structure - courses. Every edition (third level item, product card) name was a link to a dedicated subpage. Every product card looks similar - the only difference is details, like the place and start date, and colour of a button, red in open editions and grey in past editions. After closing enrollment form the subpage status was changed to ‘past edition’ and its card was moved to the second section.
-                    </em></p>
-                    <p><em>
+                    </em>
+                    <em>
                         Right: New page courses’ architecture. One subpage per course (e.g. Java for beginners) which reduced repeating data. Notice: past editions are no longer available. Open edition as product cards with details like the place and start date on the course’s subpage.
-                    </em></p>
+                    </em>
                     <p>
                         To reduce the number of elements (and possible choices for user) on the courses’ page, I’ve grouped course's editions under technology and level name (e.g. ‘Java for beginners’; every course named this way had and have the same script) on one page and creating cards with editions' details and individual sign-in buttons. 
                     </p>
@@ -469,8 +469,9 @@
     </footer>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery.slim.min.js"><\/script>')</script><script src="../js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/mageichler.js"></script>
 
 
 <!-- Modals -->
@@ -637,29 +638,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        
-            $( ".scaleUp" ).click(function() {
-                if($( "#"+$(this).parent().attr('aria-label')+"" ).height() <= '1000') {
-                    $( "#"+$(this).parent().attr('aria-label')+"" ).height( $( "#"+$(this).parent().attr('aria-label')+"" ).height() * 1.25);
-                    $( "#"+$(this).parent().attr('aria-label')+"" ).width( $( "#"+$(this).parent().attr('aria-label')+"" ).width() * 1.25);
-                };
-            });
-
-            $( ".scaleDown" ).click(function() {
-                if($( "#"+$(this).parent().attr('aria-label')+"" ).height() >= '500') {
-                    $( "#"+$(this).parent().attr('aria-label')+"" ).height( $( "#"+$(this).parent().attr('aria-label')+"" ).height() * 0.8);
-                    $( "#"+$(this).parent().attr('aria-label')+"" ).width( $( "#"+$(this).parent().attr('aria-label')+"" ).width() * 0.8);
-                };
-            });
-
-            $( ".reset" ).click(function() {
-                $( "#"+$(this).parent().attr('aria-label')+"" ).height('auto');
-                $( "#"+$(this).parent().attr('aria-label')+"" ).width( '100%');
-            });
-        
-            
-    </script>
+    <script src="../js/scaling.js"></script>
 </body>
 </html>
