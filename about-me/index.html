@@ -51,11 +51,43 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="intro">
             <div class="col-md-12">
                 <h1>About me</h1>
             </div>
         </div>
+
+        <div class="toc-container">
+            <div class="toc">
+                <h5>Content:
+                    <svg id="chevron" width="33" height="18" viewBox="0 0 33 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.125 1.83966C0.125 1.54483 0.230298 1.29211 0.440893 1.08152C0.651489 0.870923 0.904204 0.765625 1.19904 0.765625C1.49387 0.765625 1.74659 0.870923 1.95718 1.08152L16.2356 15.3599L30.2928 1.30264C30.5034 1.09205 30.7561 0.98675 31.051 0.98675C31.3458 0.98675 31.5985 1.09205 31.8091 1.30264C32.0197 1.51324 32.125 1.76595 32.125 2.06079C32.125 2.35562 32.0197 2.60834 31.8091 2.81893L16.9937 17.6343C16.7831 17.8449 16.5304 17.9502 16.2356 17.9502C15.9407 17.9502 15.688 17.8449 15.4774 17.6343L0.440893 2.6294C0.398774 2.58728 0.36192 2.53989 0.330331 2.48724C0.298741 2.4346 0.272417 2.38195 0.251357 2.3293L0.188179 2.17135L0.140795 2.0134L0.125 1.83966Z" fill="var(--dark)"/>
+                    </svg>
+                </h5>
+                <ul id="toc-list">
+                    <li>
+                        <a href="#intro">Intro</a>
+                    </li>
+                    <li>
+                        <a href="#tools">Tools I know</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills I have</a>
+                    </li>
+                    <li>
+                        <a href="#coding">I'm not a programmer BUT...</a>
+                    </li>
+                    <li>
+                        <a href="#past">Past jobs & education</a>
+                    </li>
+                    <li>
+                        <a href="#after-work">After work</a>
+                    </li>
+                    <li>
+                        <a href="#disclaimer">Disclaimer</a>
+                    </li>
+                </ul>
+            </div>
 
         <div class="row"> 
           
@@ -74,7 +106,7 @@
                 </strong></p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="tools">
             <div class="col-md-12">
                 <h4>I'm always open to new tools </h4>
                 <p>
@@ -103,7 +135,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="skills">
             <div class="col-md-12">
                 <h4>I'm curious and I like to go deep </h4>
                 <p>
@@ -125,7 +157,7 @@
             </div>
         </div>
         
-        <div class="row">
+        <div class="row" id="coding">
             <div class="col-md-12">
                 <h4>Coding isn't something new for me</h4>
                 <p>
@@ -144,7 +176,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="past">
             <div class="col-md-12">
                 <h4>Past jobs & education</h4>
                 <p>My every role taught me something. As a Polish philology student, I've learnt how to go deep and think out of the box. Organizing events I've been able to meet fantastic and inspiring people. As a business owner, I've learnt the basics of accounting and how to think about thousands of things at the same time. </p>
@@ -168,7 +200,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="after-work">
             <div class="col-md-12">
                 <h4>
                     After work
@@ -191,7 +223,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="disclaimer">
             <div class="col-md-12">
                 <h4>Disclaimer</h4>
                 <p>Nobody is perfect. Neither do I. I have this disadvantage that I tell bad jokes when I'm nervous like here when I've written about myself. But I can behave 103% serious e.g. with clients!</p>
@@ -241,7 +273,9 @@
     </footer>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/mageichler.js"></script>
 <script>window.jQuery || document.write('<script src="/js/jquery.slim.min.js"><\/script>')</script><script src="../js/bootstrap.bundle.min.js"></script>
 <script>
     $(function () {
