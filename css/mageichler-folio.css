@@ -71,6 +71,7 @@ a, a:visited {
 .hidden-link {
     font-weight: normal;
     text-decoration: none;
+    font-family: var(--font-serif);
 }
 
 a:focus, a:hover, a:active {
@@ -105,9 +106,14 @@ strong {
     background: var(--color);
 }
 
+@media(min-width: 576px) {
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
 .container {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
     scroll-behavior: smooth;
 }
 
@@ -118,22 +124,32 @@ strong {
     z-index: 600;
 }
 
-.contact-icons a {
+.icon-link {
     display: inline-block;
-    margin-left: 1rem;
 }
 
-.contact-icons a:hover, .contact-icons a:active, .contact-icons a:focus {
+.icon-link:hover, .icon-link:active, .icon-link:focus {
     background: none;
 }
 
-.icon:hover path , .icons:active, .icon:focus {
+.icon-link:hover path, .icon-link:active path, .icon-link:focus path {
     fill: var(--light);
     transition: ease-in-out all 0.12s;
 }
 
-.contact-icons svg {
+.icon {
     vertical-align: bottom;
+    margin-left: 1rem;
+}
+
+.icon-link:focus-visible {
+    background: var(--dark);
+    padding: 0.5rem;
+    margin: -0.5rem 0 -0.5rem;
+}
+
+.icon-link:focus-visible .icon {
+    margin-left: 0;
 }
 
 main {
@@ -157,15 +173,23 @@ main {
     margin-bottom: 1rem;
 }
 
-.tags {
+.tag {
     color: var(--light);
+    background: var(--dark-hover);
     font-weight: 500;
     display: inline-block;
     margin-bottom: 1rem;
+    margin-right: 0.2rem;
+    padding: 0.2rem 0.8rem;
     font-family: var(--font-sans-serif);
-    font-size: 1rem;
+    font-size: 0.75rem;
 }
 
+.reverse {
+    color: var(--dark);
+    background: var(--light);
+    font-weight: 700;
+} 
 
 .thanks p {
     margin-top: 2rem;
@@ -214,13 +238,18 @@ main {
     margin-top: 3rem;
 }
 
-.subpage em {
+.subpage .col-md-12 { 
+    margin-top: -5rem;
+    padding-top: 5rem;
+  }
+
+.subpage img+em {
     display: inline-block;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 }
 
-.subpage .col-md-12 em:last-child {
+.subpage .col-md-12 img+em:last-child {
     margin-bottom: 1rem;
 }  
 
@@ -239,6 +268,12 @@ main {
 }
 
 /* Table of content */
+
+@media(max-width: 797px) {
+    .toc {
+        display: none;
+    }
+}
 
 .toc-container .col-md-12 {
     padding-right: 1rem;
