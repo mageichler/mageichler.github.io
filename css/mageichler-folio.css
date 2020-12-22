@@ -191,6 +191,12 @@ main {
     font-weight: 700;
 } 
 
+.in-progress {
+    font-family: var(--font-family-monospace);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
 .thanks p {
     margin-top: 2rem;
 }
