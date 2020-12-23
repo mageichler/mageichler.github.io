@@ -16,6 +16,12 @@ html {
     font-size: 20px;
 }
 
+@media(max-width: 575px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 body {
     background: var(--color);
     color: var(--dark);
@@ -26,6 +32,7 @@ body {
 h1, h2, h3, h4 {
     font-family: var(--font-sans-serif);
     font-weight: bold;
+    hyphens: manual;
 }
   
 h1 {
@@ -41,6 +48,19 @@ h2 {
     margin-top: 6rem;
     border-bottom: 2px solid var(--dark);
     padding-bottom: 0.5rem;
+    line-height: 4rem;
+}
+
+@media(max-width: 324px) {
+    h1 {
+        font-size: 6rem;
+        line-height: 7rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
 }
 
 h3 {
@@ -122,6 +142,13 @@ strong {
     background: var(--color);
     height: 4rem;
     z-index: 600;
+}
+
+@media(max-width: 575px) {
+    .mag-navbar {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
 }
 
 .icon-link {
@@ -275,15 +302,17 @@ main {
 
 /* Table of content */
 
-@media(max-width: 797px) {
+@media(max-width: 767px) {
     .toc {
         display: none;
     }
 }
 
-.toc-container .col-md-12 {
-    padding-right: 1rem;
-    padding-left: 0;
+@media(min-width: 768px) {
+    .toc-container .col-md-12 {
+        padding-right: 1rem;
+        padding-left: 0;
+    }
 }
 
 .toc-container {
