@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/inconsolata-regular-webfont.woff2') format('woff2'),
+         url('fonts/inconsolata-regular-webfont.woff') format('woff');
+    font-weight: nprmal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('fonts/inconsolata-black-webfont.woff2') format('woff2'),
+         url('fonts/inconsolata-black-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --color-black: #1E1C24;
+    --color-white: #F3F3F3;
+}
+
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.5;
+
+    @media screen and (max-width: 760px) {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+    }
+}
+
+p, a, span, strong, li {
+    font-size: 1.25rem;
+}
+
+h1 {
+    margin: 0 -0.25rem;
+    padding: 2rem 0;
+    font-size: 8em;
+    line-height: 0.9;
+    letter-spacing: -0.25rem;
+    font-weight: bold;
+
+    @media screen and (max-width: 420px) {
+        font-size: 6em;
+    }
+}
+
+h2 {
+    font-size: 4em;
+
+    @media screen and (max-width: 420px) {
+        font-size: 3em;
+    }
+}
+
+h2:focus-visible {
+    padding-left: 1rem;
+    margin-left: -1rem;
+    padding-right: 1rem;
+    outline: 2px dashed var(--color-black);
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h2, h3 {
+    margin: 1.5em 0 0;
+}
+
+h2 + p, h3 + p, h2 + h3 {
+    margin-top: 0.25rem;
+}
+
+ul {
+    margin: 0;
+}
+
+main, #hero, footer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20vh;
+}
+
+a {
+    font-style: normal;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+a:hover, a:focus-visible {
+    color: var(--color-white);
+    background: var(--color-black);
+    outline: 0;
+}
+
+address {
+    margin: 1em -0.25rem;
+}
+
+address a {
+    display: block;
+    margin-top: 1em;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0 0.25rem;
+    border-bottom: 2px solid var(--color-black);
+}
+
+button {
+    background: var(--color-white);
+    border: 2px solid var(--color-black);
+    padding: 1em 2em;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2em;
+}
+
+button:hover, button:focus-visible {
+    background: var(--color-black);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+#hero {
+    min-height: 100vh;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+
+    @media screen and (max-width: 420px) {
+        padding-top: 8em;
+    }
+}
+
+#hero span:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+}
