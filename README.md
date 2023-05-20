@@ -1,4 +1,6 @@
-# Hello and welcome!
+# mageichler.github.io
+
+## Hello and welcome!
 
 My name is Magdalena Eichler. I'm frontend developer based in Gdansk and this is my online CV repo. It's had multiple variants and this one is probable the simplest for now.
 
@@ -11,3 +13,4 @@ mail: mageichler@gmail.com
 LI: https://www.linkedin.com/in/mageichler/
 
 ## Have a nice day!
+
